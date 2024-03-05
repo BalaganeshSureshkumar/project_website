@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% set active = "Home" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+
+<div class="bannerbody">
+  <div id="carouselExampleCaptions" class="carousel" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="static\img\bikes\banner1.jpg" class="bannerimg" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="static\img\bikes\banner2.jpg" class="bannerimg" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="static\img\bikes\banner3.jpg" class="bannerimg" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  
+<div class="bannerhome" style="padding-top:100px;">
+  <p class="bannerhometext">What we do.</p>
+ <div class="banneritem1">
+ <div class="dineinleft">
+  <img src = "static\img\bikes\banner2.jpg" style="width:400px;height:300px;border-radius:20px 20px 0px 100px;border:2px solid #f44336;">
+ </div>
+ <div class="dineinright">
+  <p class="dineintext">Taste the essence of variety of flavours with our 
+    signature dishes and have a wondeful experience by visiting our restaurant.<br>Book a table now to dine-in. </p>
+    <nav class="homebtns"><p class="nav-item-btn{% if active == 'Dinein' %} active{% endif %}">
+      <a class="nav-link-btn" href="/dinein">Book a table</a>
+  </p></nav>
+ </div>
+ </div>
+ <hr style="border: 5px solid #f44336;border-radius: 5px;">
+ <div class="banneritem1">
+  <div class="dineinright">
+    <p class="dineintext">Taste the essence of variety of flavours with our 
+      signature dishes and have a wondeful experience by ordering online for takeaway.<br>Order online for Take away. </p>
+      <nav class="homebtns"><p class="nav-item-btn{% if active == 'Menu' %} active{% endif %}">
+        <a class="nav-link-btn" href="/cart">Take away</a>
+    </p></nav>
+  </div>
+  <div class="dineinleft">
+    <img src = "static\img\bikes\banner1.jpg" style="width:400px;height:300px;border-radius:20px 20px 0px 100px;border:2px solid #f44336;">
+  </div>
+  </div>
+</div>
+<div class="menu" style="padding-top:100px;">
+<p class="bannerhometext">Our Menu</p>
+ 
+
+<p class="menutext">We have the best selection of food in our menu </p>
+
+
+  <section id="content">
+    <div class="grid">
+        <div class="menu-item">
+          <img src="static\img\bikes\item1.jpg" alt="Item 1">
+          <h3>Biryani</h3>
+          <span>$15.99</span>
+        </div>
+      </a>
+        <div class="menu-item">
+          <img src="static\img\bikes\pasta.jpg" alt="Item 2">
+          <h3>Pasta</h3>
+          <span>$12.99</span>
+        </div>
+      </a>
+   
+        <div class="menu-item">
+          <img src="static\img\bikes\pizza.jpg" alt="Item 3">
+          <h3>Pizza</h3>
+          <span>$10.99</span>
+        </div>
+   
+        <div class="menu-item">
+          <img src="static\img\bikes\salad.jpg" alt="Item 4">
+          <h3>Salad</h3>
+          <span>$10.99</span>
+        </div>
+   
+        <div class="menu-item">
+          <img src="static\img\bikes\sushi.jpg" alt="Item 5">
+          <h3>Sushi</h3>
+          <span>$12.99</span>
+        </div>
+      </a>
+    </div>
+    <div class="moretiemsbtn" style="display:flex;justify-content:center;padding-top:10px;">
+    <nav class="homebtns"><p class="nav-item-btn{% if active == 'Menu' %} active{% endif %}">
+      <a class="nav-link-btn" href="/menu">More Items</a>
+  </p></nav>
+</div>
+</section>
+
+</div>
+<div class="menu" style="padding-top:100px;">
+<p class="bannerhometext">About Us</p>
+<div class="par1">
+    <p>
+        An About Us page is a section on a website that provides information about a company, organization, or individual.
+         It is an opportunity to tell your brand's story, share your vision, history, values, and achievements, and introduce 
+         team members. This is where you build trust and credibility with customers.
+    </p>
+</div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.3163461837344!2d-75.19779392415599!3d39.95667937151729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c64e1dbc7ee1%3A0x1d942ccb2e5f80b2!2sDrexel%20University%20College%20of%20Computing%20%26%20Informatics!5e0!3m2!1sen!2sus!4v1708900196208!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% set active = "Dinein" %}
+
+{% block title %}
+Related Sites
+{% endblock %}
+
+{% block content %}
+<body>
+  <div class="container" style="padding-left:400px;">
+    <h1 style="padding-top:60px;">Table Booking</h1>
+    <form class="booking">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" required>
+
+      
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required>
+      
+      <label for="guests" style="padding-top:20px;">Number of Guests:</label>
+      <select id="guests" name="guests" required>
+        <option value=""></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      
+            
+      <label for="date">Date:</label>
+      <input type="text" id="datepicker" name="date" required>
+
+      <button type="submit">Submit </button>
+    </form>
+  
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $( function() {
+      $( "#datepicker" ).datepicker({
+        minDate: 0,
+        dateFormat: "yy-mm-dd"
+      });
+    });
+  </script>
+  </body>
+  </html>
+{% endblock %}

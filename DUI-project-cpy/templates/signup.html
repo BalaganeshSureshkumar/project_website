@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% set active = "Signup" %}
+
+{% block title %}
+Related Sites
+{% endblock %}
+
+{% block content %}
+<div class="bgimg">
+    <div class="formpage">
+      <div class="formdata">
+       <form action="action_page.php" method="post">
+       <h2 class="welcome">Welcome!</h2>
+    
+        <div class="container">
+          <label for="uname"><b>Email Address</b></label>
+          <input type="text" placeholder="Enter Email Address" name="email" required>
+          <br>
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+          <br>
+          <label for="psw"><b>Password </b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <br>
+          <label for="psw"><b>Retype Password </b></label>
+          <input type="password" placeholder="Retype Password" name="psw" required>
+          <br>
+          <button type="submit">Sign up</button>
+          <br>
+          <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          </div>
+    
+         <div class="container">
+         <button type="button" class="cancelbtn" ><a href="/">Cancel</a></button>
+         </div>
+       </form>
+      </div>
+    </div>
+    <div class="signinimg"><img src="static\img\bikes\banner3 (2).jpg" style="width:700px;height:700px;"></div>
+  </div>
+{% endblock %}

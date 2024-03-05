@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% set active = "Cart" %}
+
+{% block title %}
+Related Sites
+{% endblock %}
+
+{% block content %}
+<div class="whole">
+<div class="cartcontainer">
+ <div class="carthead">    
+     <h1>Your Items</h1>
+     <div class="shopping">
+     <h4>Cart</h4>
+     <span class="quantity">0</span>
+     </div>
+  </div>
+ <div class="list">   
+    
+    <div class="menu-item">
+      <img src="static\img\bikes\item1.jpg" alt="Item 1">
+      <h3>Biryani</h3>
+      <span>$15.99</span>
+      <button class="add-to-cart">Add +</button>
+    </div>
+    <div class="menu-item">
+      <img src="static\img\bikes\pasta.jpg" alt="Item 2">
+      <h3>Pasta</h3>
+      <span>$12.99</span>
+      <button class="add-to-cart">Add +</button>
+    </div>
+    <div class="menu-item">
+      <img src="static\img\bikes\pizza.jpg" alt="Item 3">
+      <h3>Pizza</h3>
+      <span>$10.99</span>
+      <button class="add-to-cart">Add +</button>
+    </div>
+    <div class="menu-item">
+      <img src="static\img\bikes\salad.jpg" alt="Item 4">
+      <h3>Salad</h3>
+      <span>$10.99</span>
+      <button class="add-to-cart">Add +</button>
+    </div>
+    <div class="menu-item">
+      <img src="static\img\bikes\sushi.jpg" alt="Item 5">
+      <h3>Sushi</h3>
+      <span>$12.99</span>
+      <button class="add-to-cart">Add +</button>
+    </div>
+    <div class="menu-item">
+      <img src="static\img\bikes\dumplings.jpg" alt="Item 6">
+      <h3>Dumplings</h3>
+      <span>$10.99</span>
+      <button class="add-to-cart">Add +</button>
+    </div>
+    <div class="menu-item">
+      <img src="static\img\bikes\noodles.jpg" alt="Item 7">
+      <h3>Noodles</h3>
+      <span>$11.99</span>
+      <button class="add-to-cart">Add +</button>
+    </div>
+    <div class="menu-item">
+      <img src="static\img\bikes\chicken.jpg" alt="Item 8">
+      <h3>Chicken</h3>
+      <span>$13.99</span>
+      <button class="add-to-cart">Add +</button>
+    </div>
+  <div class="menu-item">
+    <img src="static\img\bikes\burger.jpg" alt="Item 9">
+    <h3>Burger</h3>
+    <span>$10.99</span>
+    <button class="add-to-cart">Add +</button>
+  </div>
+  <div class="menu-item">
+    <img src="static\img\bikes\chickenrice.jpg" alt="Item 10">
+    <h3>Chicken rice</h3>
+    <span>$12.99</span>
+    <button class="add-to-cart">Add +</button>
+  </div>
+</div>
+</div>
+<div class="cartcard">
+    <h1>Cart</h1>
+    <ul class="listcard">
+    </ul>
+    <div class="checkout">
+     <div class="total">0</div>
+     <div class="closeshopping">Close</div>
+    </div>
+</div>
+</div>
+{% endblock %}
